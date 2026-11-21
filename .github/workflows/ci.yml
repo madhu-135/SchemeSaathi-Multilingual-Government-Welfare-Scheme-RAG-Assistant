@@ -1,0 +1,75 @@
+name: SchemeSaathi CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  # ============================================================================
+  # Backend Testing Suite (Python 3.11, Pytest, FAISS, PyMuPDF, FastAPI)
+  # ============================================================================
+  backend-tests:
+    name: Backend Pytest Suite
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: backend/requirements.txt
+
+      - name: Install System Dependencies (OpenMP for FAISS)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends libgomp1 build-essential
+
+      - name: Install Python Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements.txt
+
+      - name: Run Pytest Test Suite
+        env:
+          PYTHONPATH: backend:.
+          ANTHROPIC_API_KEY: "sk-ant-test-ci-key"
+          MONGO_URI: "mongodb://localhost:27017"
+          EMBED_MODEL: "intfloat/multilingual-e5-small"
+          SIMILARITY_THRESHOLD: "0.80"
+        run: |
+          pytest backend/tests/ -v --tb=short
+
+  # ============================================================================
+  # Frontend Production Build (Node 20, Vite, React, Tailwind CSS)
+  # ============================================================================
+  frontend-build:
+    name: Frontend Vite Production Build
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: frontend
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install Node Modules
+        run: npm ci || npm install
+
+      - name: Build Production Assets
+        run: npm run build
+

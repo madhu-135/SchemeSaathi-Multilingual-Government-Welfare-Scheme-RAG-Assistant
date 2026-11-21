@@ -1,0 +1,323 @@
+[
+  {
+    "id": 1,
+    "question": "What is the annual financial support provided under PM-KISAN?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 2,
+    "question": "How many installments is the PM-KISAN amount divided into?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 3,
+    "question": "Are institutional landholders eligible for PM-KISAN benefits?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 4,
+    "question": "How is a landholder farmer family defined under PM-KISAN?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 5,
+    "question": "Can income tax paying individuals receive PM-KISAN financial assistance?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 6,
+    "question": "Are government ministers or constitutional post holders eligible for PM-KISAN?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 7,
+    "question": "Who is responsible for the identification of PM-KISAN beneficiaries?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 2
+  },
+  {
+    "id": 8,
+    "question": "What is the helpline number for registering PM-KISAN grievances?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 2
+  },
+  {
+    "id": 9,
+    "question": "What district authority resolves PM-KISAN beneficiary disputes?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 2
+  },
+  {
+    "id": 10,
+    "question": "Is Aadhaar verification mandatory for receiving PM-KISAN installments?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 2
+  },
+  {
+    "id": 11,
+    "question": "How much monthly entitlement is given to women under Kalaignar Magalir Urimai Thittam?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 12,
+    "question": "What is the annual family income limit for Kalaignar Magalir Urimai Thittam?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 13,
+    "question": "What are the land ownership limits for Kalaignar Magalir Urimai Thittam?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 14,
+    "question": "What is the electricity consumption ceiling to be eligible for Kalaignar Magalir Urimai?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 15,
+    "question": "Where can eligible women submit application forms for Kalaignar Magalir Urimai Thittam?",
+    "language": "en",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 16,
+    "question": "பி.எம் கிசான் திட்டத்தின் கீழ் விவசாயிகளுக்கு ஆண்டுக்கு எவ்வளவு நிதி உதவி வழங்கப்படுகிறது?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 17,
+    "question": "பி.எம் கிசான் தொகை எத்தனை தவணைகளாக பிரித்து வழங்கப்படுகிறது?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 18,
+    "question": "நிறுவன நில உரிமையாளர்கள் பி.எம் கிசான் திட்ட பலன்களை பெற முடியுமா?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 19,
+    "question": "பி.எம் கிசான் திட்டத்தின் கீழ் ஒரு குடும்பம் எவ்வாறு வரையறுக்கப்படுகிறது?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 20,
+    "question": "வருமான வரி செலுத்துபவர்கள் பி.எம் கிசான் திட்டத்திற்கு தகுதியானவர்களா?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 21,
+    "question": "மருத்துவர்கள் அல்லது வழக்கறிஞர்கள் பி.எம் கிசான் உதவித்தொகை பெற முடியுமா?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 1
+  },
+  {
+    "id": 22,
+    "question": "பி.எம் கிசான் பயனாளிகளை அடையாளம் காணும் பொறுப்பு யாரிடம் உள்ளது?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 2
+  },
+  {
+    "id": 23,
+    "question": "பி.எம் கிசான் குறைதீர்க்கும் கட்டணமில்லா உதவி எண் என்ன?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 2
+  },
+  {
+    "id": 24,
+    "question": "பி.எம் கிசான் திட்ட குறைதீர்க்கும் மாவட்ட குழு எது?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 2
+  },
+  {
+    "id": 25,
+    "question": "பி.எம் கிசான் திட்டத்தில் நில ஆவண சரிபார்ப்பு எவ்வாறு செய்யப்படுகிறது?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "PM Kisan",
+    "expected_page": 2
+  },
+  {
+    "id": 26,
+    "question": "கலைஞர் மகளிர் உரிமைத் திட்டத்தின் கீழ் குடும்பத் தலைவிகளுக்கு மாதம் எவ்வளவு தொகை வழங்கப்படுகிறது?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 27,
+    "question": "கலைஞர் மகளிர் உரிமைத் திட்டத்திற்கு விண்ணப்பிக்க குடும்ப ஆண்டு வருமான வரம்பு என்ன?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 28,
+    "question": "கலைஞர் மகளிர் உரிமைத் திட்டத்தில் நன்செய் மற்றும் புன்செய் நில உடமைக்கான வரம்பு என்ன?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 29,
+    "question": "மகளிர் உரிமைத் திட்டத்திற்கு விண்ணப்பிக்க மின்சார பயன்பாட்டு உச்சவரம்பு எவ்வளவு?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 30,
+    "question": "கலைஞர் மகளிர் உரிமைத் திட்ட விண்ணப்ப படிவம் எங்கு விநியோகிக்கப்படும்?",
+    "language": "ta",
+    "category": "in_scope",
+    "expected_scheme": "Kalaignar Magalir Urimai",
+    "expected_page": 1
+  },
+  {
+    "id": 31,
+    "question": "How do I bake chocolate chip cookies in an oven?",
+    "language": "en",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  },
+  {
+    "id": 32,
+    "question": "What is the average distance between Earth and Mars?",
+    "language": "en",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  },
+  {
+    "id": 33,
+    "question": "How do I replace the engine oil in a Honda Civic?",
+    "language": "en",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  },
+  {
+    "id": 34,
+    "question": "What was the score of the 2011 ICC Cricket World Cup final?",
+    "language": "en",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  },
+  {
+    "id": 35,
+    "question": "How does a neural network backpropagation algorithm work?",
+    "language": "en",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  },
+  {
+    "id": 36,
+    "question": "வீட்டிலேயே சுவையான தக்காளி சாதம் செய்வது எப்படி?",
+    "language": "ta",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  },
+  {
+    "id": 37,
+    "question": "சூரிய குடும்பத்தில் உள்ள மிகப்பெரிய கிரகம் எது?",
+    "language": "ta",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  },
+  {
+    "id": 38,
+    "question": "ஸ்மார்ட்போனில் பேட்டரி ஆயுளை அதிகரிப்பது எப்படி?",
+    "language": "ta",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  },
+  {
+    "id": 39,
+    "question": "சென்னையிலிருந்து மதுரைக்கு செல்ல சிறந்த ரயில் எது?",
+    "language": "ta",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  },
+  {
+    "id": 40,
+    "question": "பஞ்சதந்திரக் கதைகளின் முக்கிய நோக்கம் என்ன?",
+    "language": "ta",
+    "category": "out_of_scope",
+    "expected_scheme": null,
+    "expected_page": null
+  }
+]
+

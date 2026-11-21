@@ -1,0 +1,76 @@
+services:
+  # ============================================================================
+  # MongoDB - Chat Session & Message Persistence
+  # ============================================================================
+  mongo:
+    image: mongo:7.0
+    container_name: schemesaathi-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD-SHELL", "mongosh --eval 'db.runCommand({ ping: 1 })' || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ============================================================================
+  # FastAPI Backend - Multilingual RAG Engine & Anthropic Claude Integration
+  # ============================================================================
+  backend:
+    container_name: schemesaathi-backend
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      # Secrets and runtime parameters passed via .env file or environment
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - ANTHROPIC_MODEL=${ANTHROPIC_MODEL:-claude-3-5-sonnet-20241022}
+      - MONGO_URI=${MONGO_URI:-mongodb://mongo:27017}
+      - MONGO_DB_NAME=${MONGO_DB_NAME:-schemesaathi}
+      - EMBED_MODEL=${EMBED_MODEL:-intfloat/multilingual-e5-small}
+      - TOP_K=${TOP_K:-4}
+      - SIMILARITY_THRESHOLD=${SIMILARITY_THRESHOLD:-0.80}
+    volumes:
+      # Mount data/index as a volume for persistent vector store and metadata
+      - ./data/index:/app/data/index
+      - ./data/raw:/app/data/raw
+    depends_on:
+      mongo:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  # ============================================================================
+  # React + Vite + Tailwind Frontend - Nginx Reverse Proxy
+  # ============================================================================
+  frontend:
+    container_name: schemesaathi-frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
+
+volumes:
+  mongo_data:
+    driver: local
